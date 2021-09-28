@@ -1,0 +1,18 @@
+#contacto {
+    
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        
+        input:nth-child(2n) {
+            width: 380px;
+        }
+
+        label, input:last-child {
+            margin-top: 10px;
+        }
+    }
+
+}

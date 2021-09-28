@@ -1,0 +1,32 @@
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: start;
+    padding: 50px 50px;
+}
+
+h3 {
+    color: white;
+    text-transform: uppercase;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+ul li {
+    list-style-type: none;
+    color: #00d2b5;
+}
+
+.logos-rs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.logos-rs i {
+    font-size: 50px;
+    padding-right: 30px;
+}
