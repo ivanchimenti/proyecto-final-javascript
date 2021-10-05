@@ -1,0 +1,15 @@
+
+#posteos {
+    .fotos-posteos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        img {
+            // width: 400px;
+            // height: 400px;
+            width: 80%;
+            height: 80%;
+        }
+    }
+}

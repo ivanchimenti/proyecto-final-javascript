@@ -35,14 +35,24 @@ h1 {
   padding-top: 20px;
 }
 
+#posteos .fotos-posteos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#posteos .fotos-posteos img {
+  width: 80%;
+  height: 80%;
+}
+
 #contacto form {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
 }
-#contacto form input:nth-child(2n) {
-  width: 380px;
+#contacto form input:nth-child(2n), #contacto form textarea {
+  width: 80%;
 }
 #contacto form label, #contacto form input:last-child {
   margin-top: 10px;
@@ -105,6 +115,9 @@ ul li {
   body .carousel-inner {
     height: 470px;
   }
+  body #contacto form input:nth-child(2n), body #contacto form textarea {
+    width: 60%;
+  }
 }
 /* Desktop */
 @media only screen and (min-width: 1024px) {
@@ -114,6 +127,9 @@ ul li {
   }
   body .carousel-inner {
     height: 720px;
+  }
+  body #contacto form input:nth-child(2n), body #contacto form textarea {
+    width: 40%;
   }
 }
 
