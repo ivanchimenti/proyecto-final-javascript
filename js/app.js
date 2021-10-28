@@ -1,50 +1,83 @@
-class Camiseta {
-    constructor(nombre, modelo, talle, precio) {
-        this.nombre = nombre;
-        this.modelo = modelo;
-        this.talle = talle;
-        this.precio = parseFloat(precio);
-    }
+// class Camiseta {
+//     constructor(codigo,marca,equipo,modelo,temporada,) {
+//         this.codigo = codigo;
+//         this.marca = marca;
+//         this.equipo = equipo;
+//         this.modelo = modelo;
+//         this.temporada = parseInt(temporada);
+//     }
+// }
 
-    // mostrarPedido() {
-    //     alert(`El pedido realizado fue: \n
-    //            La camiseta del ${this.nombre} ${this.modelo} en talle ${this.talle}`);
-    // }
-}
+let titulo = document.getElementsByClassName("titulo");
+titulo.innerHTML="Le cambié el titulo";
 
-const stock = [];
-let cantidadDeposito = 4;
 
-do {
-    let equipo = prompt("Ingresar nombre del equipo");
-    let modelo = prompt("Ingrese el modelo de la camiseta (Titular, Suplente o Alternativa)");
-    let talle = prompt("Ingrese el talle");
-    let precio = prompt("Ingrese el valor")
-    stock.push(new Camiseta(equipo, modelo, talle, precio));
-}while(stock.length != cantidadDeposito)
 
-stock.sort((a,b) => {
-    const equipoA = a.nombre.toLowerCase();
-    const equipoB = b.nombre.toLowerCase();
-    if (equipoA < equipoB) {
-        return -1;
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class Camiseta {
+//     constructor(nombre, modelo, talle, precio) {
+//         this.nombre = nombre;
+//         this.modelo = modelo;
+//         this.talle = talle;
+//         this.precio = parseFloat(precio);
+//     }
+
+//     // mostrarPedido() {
+//     //     alert(`El pedido realizado fue: \n
+//     //            La camiseta del ${this.nombre} ${this.modelo} en talle ${this.talle}`);
+//     // }
+// }
+
+
+
+// const stock = [];
+// let cantidadDeposito = 4;
+
+// do {
+//     let equipo = prompt("Ingresar nombre del equipo");
+//     let modelo = prompt("Ingrese el modelo de la camiseta (Titular, Suplente o Alternativa)");
+//     let talle = prompt("Ingrese el talle");
+//     let precio = prompt("Ingrese el valor")
+//     stock.push(new Camiseta(equipo, modelo, talle, precio));
+// }while(stock.length != cantidadDeposito)
+
+// stock.sort((a,b) => {
+//     const equipoA = a.nombre.toLowerCase();
+//     const equipoB = b.nombre.toLowerCase();
+//     if (equipoA < equipoB) {
+//         return -1;
+//     }
     
-    if (equipoA > equipoB) {
-        return 1;
-    }
+//     if (equipoA > equipoB) {
+//         return 1;
+//     }
 
-    return 0;
+//     return 0;
 
-});
+// });
 
-console.log(stock);
-
-
-
-
-
-
+// console.log(stock);
 
 
 
