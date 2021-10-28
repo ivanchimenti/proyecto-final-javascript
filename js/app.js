@@ -8,10 +8,8 @@
 //     }
 // }
 
-let titulo = document.getElementsByClassName("titulo");
+let titulo = document.getElementById("titulo");
 titulo.innerHTML="Le cambié el titulo";
-
-
 
 
 
