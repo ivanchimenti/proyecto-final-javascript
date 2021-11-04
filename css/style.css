@@ -49,6 +49,19 @@ h1 {
   height: 80%;
 }
 
+#products {
+  width: 18rem;
+}
+#products h5, #products p, #products hr {
+  color: black;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 #contacto form {
   display: flex;
   flex-wrap: wrap;

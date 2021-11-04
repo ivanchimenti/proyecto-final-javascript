@@ -4,14 +4,14 @@ let productos = [
         "nombre": "Camiseta Titular del Barcelona",
         "precio": 1500,
         "stock": 20,
-        "img": "barcelona-titular-1.jpg"
+        "img": "/images/img-products/espania/barcelona-titular-1.jpg"
     },
     {
         "id": 2,
         "nombre": "Camiseta Titular del Real Madrid",
         "precio": 1500,
         "stock": 13,
-        "img": "rm-titular-1.jpg"
+        "img": ".../.../rm-titular-1.jpg"
     },
     {
         "id": 3,
@@ -21,8 +21,6 @@ let productos = [
         "img": "atm-titular-1.jpg"
     },
 ];
-
-
 
 let products = document.getElementById("products");
 
@@ -38,12 +36,11 @@ productos.forEach(producto => {
     p.className = "card-text";
     let a = document.createElement("a");
     a.className = "btn btn-primary";
-    a.onclick = () => {alert(`¡Felicidades ${nombreIngresado}, agregaste la camiseta al carrito!`)}
     let hr = document.createElement("hr");
 
 
 
-    img.src = "images/img-products/espania/"+ producto.img;
+    img.src = "img/"+ producto.img;
     h5.innerHTML += producto.nombre;
     p.innerHTML += "$" + producto.precio;
     a.innerHTML += "Comprar";
@@ -62,5 +59,4 @@ let nombreIngresado = prompt("Ingrese su nombre");
 let etiqueta = document.getElementById("saludo");
 
 etiqueta.innerHTML = `Bienvenido ${nombreIngresado}`;
-
 

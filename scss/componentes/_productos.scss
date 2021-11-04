@@ -1,0 +1,13 @@
+#products {
+    width: 18rem;
+
+    h5, p, hr{
+    color: black;
+    }
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
