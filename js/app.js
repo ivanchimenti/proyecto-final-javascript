@@ -1,28 +1,18 @@
-let productos = [
-    {
-        "id": 1,
-        "nombre": "Camiseta Titular del Barcelona",
-        "precio": 1500,
-        "stock": 20,
-        "img": "barcelona-titular-1.jpg"
-    },
-    {
-        "id": 2,
-        "nombre": "Camiseta Titular del Real Madrid",
-        "precio": 1500,
-        "stock": 13,
-        "img": "rm-titular-1.jpg"
-    },
-    {
-        "id": 3,
-        "nombre": "Camiseta Titular del Atletico",
-        "precio": 1500,
-        "stock": 8,
-        "img": "atm-titular-1.jpg"
-    },
-];
+$.ajax({
+    url: "./productos.json",            
+    type: "GET",        
+    dataType: "json"    
+})
+.done(function(elementos){
+var productos = elementos.Productos.length
+console.log(productos)});
 
+let arrayProductos = [];
 
+// for (let i = 0; i < array.length; i++) {
+//     const element = array[i];
+    
+// }
 
 let products = document.getElementById("products");
 
@@ -62,5 +52,3 @@ let nombreIngresado = prompt("Ingrese su nombre");
 let etiqueta = document.getElementById("saludo");
 
 etiqueta.innerHTML = `Bienvenido ${nombreIngresado}`;
-
-

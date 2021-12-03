@@ -1,0 +1,25 @@
+{ "Productos":
+    
+[{
+    "id": 1,
+    "nombre": "Camiseta Titular del Barcelona",
+    "precio": 1500,
+    "stock": 20,
+    "img": "barcelona-titular-1.jpg"
+},
+
+{
+    "id": 2,
+    "nombre": "Camiseta Titular del Real Madrid",
+    "precio": 1500,
+    "stock": 13,
+    "img": "rm-titular-1.jpg"
+},
+
+{
+    "id": 3,
+    "nombre": "Camiseta Titular del Atletico",
+    "precio": 1500,
+    "stock": 8,
+    "img": "atm-titular-1.jpg"
+}]}
