@@ -1,54 +1,85 @@
-$.ajax({
-    url: "./productos.json",            
-    type: "GET",        
-    dataType: "json"    
-})
-.done(function(elementos){
-var productos = elementos.Productos.length
-console.log(productos)});
+const URIGET = "js/productos.json";
 
-let arrayProductos = [];
+$.getJSON(URIGET, function (respuesta, estado){
+    if(estado ==="success"){
+        products = respuesta;
+        
+        let productsStr = JSON.stringify(products);
 
-// for (let i = 0; i < array.length; i++) {
-//     const element = array[i];
-    
-// }
+        localStorage.setItem("listOfProducts",productsStr);
+    }
+});
 
-let products = document.getElementById("products");
+/**
+ * 
+ * @param {*} cart 
+ * @param {*} id
+ *  Add products to the cart 
+ */
+ function addTocart(cart,id){
+    cart.push("" + id);
+    alert("Added to cart succesfully");
+    guardarCarritoEnLocalStorage(cart);
+  }
+  
+  /**
+   * 
+   * @param {*} cart
+   * Save cart in Local Storage
+   */
+  function guardarCarritoEnLocalStorage (cart) {
+    localStorage.setItem('carrito', JSON.stringify(cart));
+  }
 
-productos.forEach(producto => {
+  
+  function showProducts(category, products,cart) {
+    $("body").append(`
+      <div class="container mt-5 mb-5">
+        <div class="d-flex justify-content-center row">
+        <div class="col-md-10">
+        </div>
+        </div>
+      </div>`);
+    for (const product of products) {
+      if (product.category === category.toLowerCase()) {
+        $(".col-md-10").prepend(`
+      <div class="row p-2 bg-white border rounded mt-2">
+          <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="../${product.img}"></div>
+              <div class="col-md-6 mt-1">
+                  <h5>${product.nombre}</h5>
+                  <div class="d-flex flex-row">
+                      <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                      </div><span>${product.pais}</span>
+                  </div>
+                  <div class="mt-1 mb-1 spec-1">
+                    <span>100% cotton</span><span class="dot"></span><span>Light weight</span><span class="dot"></span><span>Best finish<br></span>
+                  </div>
+                  <div class="mt-1 mb-1 spec-1">
+                    <span>Unique design</span><span class="dot"></span><span>For men</span><span class="dot"></span><span>Casual<br></span>
+                  </div>
+                  <p class="text-justify text-truncate para mb-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.<br><br></p>
+              </div>
+              <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                <div class="d-flex flex-row align-items-center">
+                    <h4 class="mr-1">$${product.precio}</h4><span class="strike-text">$${product.precio + 300}</span>
+                </div>
+                <h6 class="text-success">last ${product.stock} unities</h6>
+                <div class="d-flex flex-column mt-4">
+                    <button class="btn btn-primary btn-sm" type="button" id="tocart${product.id}" >Add to cart</button>
+                </div>
+              </div> 
+          </div>
+      </div>`);
+      let botonElementcart=document.getElementById("tocart"+product.id);
+      botonElementcart.addEventListener("click",function(){addToCart(cart,product.id)})
+      }
+    }
+}
 
-    let img = document.createElement("img");
-    img.className = "card-img-top";
-    let div = document.createElement("div");
-    div.className = "card-body";
-    let h5 = document.createElement("h5");
-    h5.className = "card.title";
-    let p = document.createElement("p");
-    p.className = "card-text";
-    let a = document.createElement("a");
-    a.className = "btn btn-primary";
-    a.onclick = () => {alert(`¡Felicidades ${nombreIngresado}, agregaste la camiseta al carrito!`)}
-    let hr = document.createElement("hr");
+let cart = [];
 
+if (localStorage.getItem("carrito") != null) {
+    cart = JSON.parse(localStorage.getItem("carrito"));
+}
 
-
-    img.src = "images/img-products/espania/"+ producto.img;
-    h5.innerHTML += producto.nombre;
-    p.innerHTML += "$" + producto.precio;
-    a.innerHTML += "Comprar";
-    div.appendChild(img);
-    div.appendChild(h5);
-    div.appendChild(p);
-    div.appendChild(a);
-    div.appendChild(hr);
-    products.appendChild(div);
-})
-
-
-
-let nombreIngresado = prompt("Ingrese su nombre");
-
-let etiqueta = document.getElementById("saludo");
-
-etiqueta.innerHTML = `Bienvenido ${nombreIngresado}`;
+localStorage.setItem("carrito", JSON.stringify(cart));

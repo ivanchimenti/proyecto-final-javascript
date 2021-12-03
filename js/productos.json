@@ -1,25 +1,398 @@
-{ "Productos":
-    
-[{
-    "id": 1,
-    "nombre": "Camiseta Titular del Barcelona",
-    "precio": 1500,
-    "stock": 20,
-    "img": "barcelona-titular-1.jpg"
-},
+[
+    {
+        "id": 1,
+        "nombre": "Camiseta Titular del Barcelona",
+        "pais": "España",
+        "precio": 4500,
+        "stock": 20,
+        "img": "espania/barcelona-titular-1.jpg"
+    },
 
-{
-    "id": 2,
-    "nombre": "Camiseta Titular del Real Madrid",
-    "precio": 1500,
-    "stock": 13,
-    "img": "rm-titular-1.jpg"
-},
+    {
+        "id": 2,
+        "nombre": "Camiseta Titular del Real Madrid",
+        "pais": "España",
+        "precio": 4500,
+        "stock": 13,
+        "img": "espania/rm-titular-1.jpg"
+    },
 
-{
-    "id": 3,
-    "nombre": "Camiseta Titular del Atletico",
-    "precio": 1500,
-    "stock": 8,
-    "img": "atm-titular-1.jpg"
-}]}
+    {
+        "id": 3,
+        "nombre": "Camiseta Titular del Atletico",
+        "pais": "España",
+        "precio": 4500,
+        "stock": 8,
+        "img": "espania/atm-titular-1.jpg"
+    },
+
+    {
+        "id": 4,
+        "nombre": "Camiseta Titular del Sevilla",
+        "pais": "España",
+        "precio": 4500,
+        "stock": 8,
+        "img": "espania/sevilla-titular-1.jpg"
+    },
+
+    {
+        "id": 5,
+        "nombre": "Camiseta Titular del Valencia",
+        "pais": "España",
+        "precio": 4500,
+        "stock": 8,
+        "img": "espania/valencia-titular-1.jpg"
+    },
+
+    {
+        "id": 6,
+        "nombre": "Camiseta Titular del Athletic Bilbao",
+        "pais": "España",
+        "precio": 4500,
+        "stock": 8,
+        "img": "espania/athleticbilbao-titular-1.jpg"
+    },
+
+    {
+        "id": 7,
+        "nombre": "Camiseta Titular de la Juventus",
+        "pais": "Italia",
+        "precio": 4500,
+        "stock": 8,
+        "img": "italia/juventus-titular-1.jpg"
+    },
+
+    {
+        "id": 8,
+        "nombre": "Camiseta Titular del Inter Milano",
+        "pais": "Italia",
+        "precio": 4500,
+        "stock": 8,
+        "img": "italia/inter-titular-1.jpg"
+    },
+
+    {
+        "id": 9,
+        "nombre": "Camiseta Titular del Milan",
+        "pais": "Italia",
+        "precio": 4500,
+        "stock": 8,
+        "img": "italia/milan-titular-1.jpg"
+    },
+
+    {
+        "id": 10,
+        "nombre": "Camiseta Titular del Napoli",
+        "pais": "Italia",
+        "precio": 4500,
+        "stock": 8,
+        "img": "italia/napoli-titular-1.jpg"
+    },
+
+    {
+        "id": 11,
+        "nombre": "Camiseta Titular de la Roma",
+        "pais": "Italia",
+        "precio": 4500,
+        "stock": 8,
+        "img": "italia/roma-titular-1.jpg"
+    },
+
+    {
+        "id": 12,
+        "nombre": "Camiseta Titular de la Fiorentina",
+        "pais": "Italia",
+        "precio": 4500,
+        "stock": 8,
+        "img": "italia/fiorentina-titular-1.jpg"
+    },
+
+    {
+        "id": 13,
+        "nombre": "Camiseta Titular del PSG",
+        "pais": "Francia",
+        "precio": 4500,
+        "stock": 8,
+        "img": "francia/psg-titular-1.jpg"
+    },
+
+    {
+        "id": 14,
+        "nombre": "Camiseta Titular del Olympique de Marsella",
+        "pais": "Francia",
+        "precio": 4500,
+        "stock": 8,
+        "img": "francia/marsella-titular-1.jpg"
+    },
+
+    {
+        "id": 15,
+        "nombre": "Camiseta Titular del Olympique de Lyon",
+        "pais": "Francia",
+        "precio": 4500,
+        "stock": 8,
+        "img": "francia/lyon-titular-1.jpg"
+    },
+
+    {
+        "id": 16,
+        "nombre": "Camiseta Titular del Monaco",
+        "pais": "Francia",
+        "precio": 4500,
+        "stock": 8,
+        "img": "francia/monaco-titular-1.jpg"
+    },
+
+    {
+        "id": 17,
+        "nombre": "Camiseta Titular del Lille",
+        "pais": "Francia",
+        "precio": 4500,
+        "stock": 20,
+        "img": "francia/lille-titular-1.jpg"
+    },
+
+    {
+        "id": 18,
+        "nombre": "Camiseta Titular del Saint Etienne",
+        "pais": "Francia",
+        "precio": 4500,
+        "stock": 13,
+        "img": "francia/saintetienne-titular-1.jpg"
+    },
+
+    {
+        "id": 19,
+        "nombre": "Camiseta Titular del Bayern Munich",
+        "pais": "Alemania",
+        "precio": 4500,
+        "stock": 8,
+        "img": "alemania/bayern-titular-1.jpg"
+    },
+
+    {
+        "id": 20,
+        "nombre": "Camiseta Titular de la Borussia Dortmund",
+        "pais": "Alemania",
+        "precio": 4500,
+        "stock": 8,
+        "img": "alemania/dortmund-titular-1.jpg"
+    },
+
+    {
+        "id": 21,
+        "nombre": "Camiseta Titular del RB Leipzig",
+        "pais": "Alemania",
+        "precio": 4500,
+        "stock": 8,
+        "img": "alemania/leipzig-titular-1.jpg"
+    },
+
+    {
+        "id": 22,
+        "nombre": "Camiseta Titular del Bayer Leverkusen",
+        "pais": "Alemania",
+        "precio": 4500,
+        "stock": 8,
+        "img": "alemania/leverkusen-titular-1.jpg"
+    },
+
+    {
+        "id": 23,
+        "nombre": "Camiseta Titular del Schalke 04",
+        "pais": "Alemania",
+        "precio": 4500,
+        "stock": 8,
+        "img": "alemania/schalke-titular-1.jpg"
+    },
+
+    {
+        "id": 24,
+        "nombre": "Camiseta Titular del Wolfsburgo",
+        "pais": "Alemania",
+        "precio": 4500,
+        "stock": 8,
+        "img": "alemania/wolfsburgo-titular-1.jpg"
+    },
+
+    {
+        "id": 25,
+        "nombre": "Camiseta Titular del Chelsea",
+        "pais": "Inglaterra",
+        "precio": 4500,
+        "stock": 8,
+        "img": "inglaterra/chelsea-titular-1.jpg"
+    },
+
+    {
+        "id": 26,
+        "nombre": "Camiseta Titular del Manchester City",
+        "pais": "Inglaterra",
+        "precio": 4500,
+        "stock": 8,
+        "img": "inglaterra/city-titular-1.jpg"
+    },
+
+    {
+        "id": 27,
+        "nombre": "Camiseta Titular del Manchester United",
+        "pais": "Inglaterra",
+        "precio": 4500,
+        "stock": 8,
+        "img": "inglaterra/united-titular-1.jpg"
+    },
+
+    {
+        "id": 28,
+        "nombre": "Camiseta Titular del Liverpool",
+        "pais": "Inglaterra",
+        "precio": 4500,
+        "stock": 8,
+        "img": "inglaterra/liverpool-titular-1.jpg"
+    },
+
+    {
+        "id": 29,
+        "nombre": "Camiseta Titular del Arsenal",
+        "pais": "Inglaterra",
+        "precio": 4500,
+        "stock": 8,
+        "img": "inglaterra/arsenal-titular-1.jpg"
+    },
+
+    {
+        "id": 30,
+        "nombre": "Camiseta Titular del Tottenham",
+        "pais": "Inglaterra",
+        "precio": 4500,
+        "stock": 8,
+        "img": "inglaterra/tottenham-titular-1.jpg"
+    },
+
+    {
+        "id": 31,
+        "nombre": "Camiseta Titular de Boca Juniors",
+        "pais": "Argentina",
+        "precio": 4500,
+        "stock": 8,
+        "img": "argentina/boca-titular-1.jpg"
+    },
+
+    {
+        "id": 32,
+        "nombre": "Camiseta Titular de River Plate",
+        "pais": "Argentina",
+        "precio": 4500,
+        "stock": 8,
+        "img": "argentina/river-titular-1.jpg"
+    },
+
+    {
+        "id": 33,
+        "nombre": "Camiseta Titular de San Lorenzo",
+        "pais": "Argentina",
+        "precio": 4500,
+        "stock": 8,
+        "img": "argentina/sl-titular-1.jpg"
+    },
+
+    {
+        "id": 34,
+        "nombre": "Camiseta Titular de Independiente",
+        "pais": "Argentina",
+        "precio": 4500,
+        "stock": 8,
+        "img": "argentina/independiente-titular-1.jpg"
+    },
+
+    {
+        "id": 35,
+        "nombre": "Camiseta Titular de Racing Club",
+        "pais": "Argentina",
+        "precio": 4500,
+        "stock": 8,
+        "img": "argentina/racing-titular-1.jpg"
+    },
+
+    {
+        "id": 36,
+        "nombre": "Camiseta Titular de Velez Sarsfield",
+        "pais": "Argentina",
+        "precio": 4500,
+        "stock": 8,
+        "img": "argentina/velez-titular-1.jpg"
+    },
+
+    {
+        "id": 37,
+        "nombre": "Camiseta Titular de Alemania",
+        "pais": "Internacional",
+        "precio": 4500,
+        "stock": 8,
+        "img": "paises/alemania-titular-1.jpg"
+    },
+
+    {
+        "id": 38,
+        "nombre": "Camiseta Titular de Argentina",
+        "pais": "Internacional",
+        "precio": 4500,
+        "stock": 8,
+        "img": "paises/argentina-titular-1.jpg"
+    },
+
+    {
+        "id": 39,
+        "nombre": "Camiseta Titular de Brasil",
+        "pais": "Internacional",
+        "precio": 4500,
+        "stock": 8,
+        "img": "paises/brasil-titular-1.jpg"
+    },
+
+    {
+        "id": 40,
+        "nombre": "Camiseta Titular de España",
+        "pais": "Internacional",
+        "precio": 4500,
+        "stock": 8,
+        "img": "paises/espania-titular-1.jpg"
+    },
+
+    {
+        "id": 41,
+        "nombre": "Camiseta Titular de Francia",
+        "pais": "Internacional",
+        "precio": 4500,
+        "stock": 8,
+        "img": "paises/francia-titular-1.jpg"
+    },
+
+    {
+        "id": 42,
+        "nombre": "Camiseta Titular de Inglaterra",
+        "pais": "Internacional",
+        "precio": 4500,
+        "stock": 8,
+        "img": "paises/inglaterra-titular-1.jpg"
+    },
+
+    {
+        "id": 43,
+        "nombre": "Camiseta Titular de Italia",
+        "pais": "Internacional",
+        "precio": 4500,
+        "stock": 8,
+        "img": "paises/italia-titular-1.jpg"
+    },
+
+    {
+        "id": 44,
+        "nombre": "Camiseta Titular de Uruguay",
+        "pais": "Internacional",
+        "precio": 4500,
+        "stock": 8,
+        "img": "paises/uruguay-titular-1.jpg"
+    }
+
+]

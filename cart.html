@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Carrito</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark"> <!-- style="background-color: #00d2b5;" -->
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">CH</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="index.html#pre-productos" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="index.html#pre-productos">La Liga - España</a></li>
+                      <li><a class="dropdown-item" href="index.html#pre-productos">Serie A - Italia</a></li>
+                      <li><a class="dropdown-item" href="index.html#pre-productos">Ligue 1 - Francia</a></li>
+                      <li><a class="dropdown-item" href="index.html#pre-productos">Bundesliga - Alemania</a></li>
+                      <li><a class="dropdown-item" href="index.html#pre-productos">Premier League - Inglaterra</a></li>
+                      <li><a class="dropdown-item" href="index.html#pre-productos">LPF - Argentina</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="index.html#pre-productos">Selecciones - Internacional</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html#pre-envios">Envíos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html#pre-contacto">Contacto</a> <!-- tabindex="-1" aria-disabled="true" -->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html#pre-preguntas">Preguntas frecuentes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <!-- Elementos generados a partir del JSON -->
+            <main id="items" class="col-sm-8 row"></main>
+            <!-- Carrito -->
+            <aside class="col-sm-4 text-white">
+                <h2>Carrito</h2>
+                <!-- Elementos del carrito -->
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+                <!-- Precio total -->
+                <p class="text-right">Total: <span id="total"></span></p>
+                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                <button id="boton-comprar" class="btn btn-success">Comprar</button>
+            </aside>
+        </div>
+    </div>
+
+    <footer>
+
+        <div>
+          <ul>
+            <h3>Navegación</h3>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#pre-productos">Productos</a></li>
+            <li><a href="index.html#pre-envios">Envíos</a></li>
+            <li><a href="index.html#pre-contacto">Contacto</a></li>
+            <li><a href="index.html#pre-preguntas">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+  
+        <div>
+          <ul>
+            <h3>Contacto</h3>
+            <li>Teléfono: +54 911 64556532</li>
+            <li><a href="mailto:chimencasla2012@hotmail.com">chimencasla2012@hotmail.com</a></li>
+            <li>Tapiales, Buenos Aires, Argentina</li>
+          </ul>
+        </div>
+  
+        <div>
+          <h3>Redes Sociales</h3>
+          <p>Seguinos en nuestras redes sociales</p>
+          <ul class="logos-rs">
+            <li><a href="https://www.facebook.com/lunijuegosyjuguetes"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/lunilunaplast/?hl=es-la"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCDlwwmBbLPCN4ljuJy27PBg/videos"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+  
+    </footer>
+
+    <script src="./js/cart.js"></script>
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- SCRIPT LOGOS -->
+    <script src="https://kit.fontawesome.com/c6b5081700.js" crossorigin="anonymous"></script>
+    <!-- SCRIPT BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
